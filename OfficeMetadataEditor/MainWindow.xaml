@@ -78,7 +78,7 @@
                            Foreground="{DynamicResource TextFillColorPrimaryBrush}" Margin="0,0,0,4">
                     Click <Run FontWeight="Medium">File → Open document…</Run> to select a Word, Excel, or PowerPoint file and edit its metadata.
                 </TextBlock>
-                <TextBlock Text=".docx · .xlsx · .pptx" FontFamily="Consolas"
+                <TextBlock Text=".docx | .xlsx | .pptx" FontFamily="Consolas"
                            Foreground="{DynamicResource TextFillColorSecondaryBrush}"
                            HorizontalAlignment="Center" Margin="0,0,0,14" />
                 <ui:Button Content="Open document…" Appearance="Secondary"
@@ -144,8 +144,8 @@
                                        Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
                         </StackPanel>
                         <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" Margin="0,0,0,14">
-                            <DatePicker SelectedDate="{Binding CreatedDate}" Width="230" />
-                            <ui:TextBox Margin="8,0,0,0" Width="110" FontFamily="Consolas"
+                            <DatePicker SelectedDate="{Binding CreatedDate}" Width="260" />
+                            <ui:TextBox Margin="8,0,0,0" Width="116" FontFamily="Consolas"
                                         Text="{Binding CreatedTime, UpdateSourceTrigger=PropertyChanged, StringFormat=hh\\:mm\\:ss}" />
                         </StackPanel>
 
@@ -155,8 +155,8 @@
                                        Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
                         </StackPanel>
                         <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" Margin="0,0,0,14">
-                            <DatePicker SelectedDate="{Binding ModifiedDate}" Width="230" />
-                            <ui:TextBox Margin="8,0,0,0" Width="110" FontFamily="Consolas"
+                            <DatePicker SelectedDate="{Binding ModifiedDate}" Width="260" />
+                            <ui:TextBox Margin="8,0,0,0" Width="116" FontFamily="Consolas"
                                         Text="{Binding ModifiedTime, UpdateSourceTrigger=PropertyChanged, StringFormat=hh\\:mm\\:ss}" />
                         </StackPanel>
                     </Grid>

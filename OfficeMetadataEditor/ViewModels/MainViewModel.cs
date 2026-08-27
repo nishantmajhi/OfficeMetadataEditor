@@ -145,12 +145,23 @@ public partial class MainViewModel : ObservableObject
     [RelayCommand]
     private void CloseDocument()
     {
+        _suppressDirtyTracking = true;
+
         IsDocumentLoaded = false;
         FilePath = null;
         FileDirectory = string.Empty;
         FileName = string.Empty;
         FileType = OfficeFileType.Unknown;
+        Author = string.Empty;
+        LastModifiedBy = string.Empty;
+        Revision = string.Empty;
+        CreatedDate = null;
+        CreatedTime = null;
+        ModifiedDate = null;
+        ModifiedTime = null;
         _originalSnapshot = null;
+
+        _suppressDirtyTracking = false;
         IsDirty = false;
         UpdateStatus();
     }
