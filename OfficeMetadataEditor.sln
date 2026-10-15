@@ -1,0 +1,29 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeMetadataEditor", "OfficeMetadataEditor\OfficeMetadataEditor.csproj", "{9E5B1C2A-3D4E-4F5A-8B6C-7D8E9F0A1B2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2725BD39-95C4-4848-B444-655D24C87A64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeMetadataEditor.Tests", "tests\OfficeMetadataEditor.Tests\OfficeMetadataEditor.Tests.csproj", "{8A09489A-0193-473A-B8F9-1A7FF07A92BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E5B1C2A-3D4E-4F5A-8B6C-7D8E9F0A1B2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E5B1C2A-3D4E-4F5A-8B6C-7D8E9F0A1B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E5B1C2A-3D4E-4F5A-8B6C-7D8E9F0A1B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E5B1C2A-3D4E-4F5A-8B6C-7D8E9F0A1B2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A09489A-0193-473A-B8F9-1A7FF07A92BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A09489A-0193-473A-B8F9-1A7FF07A92BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A09489A-0193-473A-B8F9-1A7FF07A92BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A09489A-0193-473A-B8F9-1A7FF07A92BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A09489A-0193-473A-B8F9-1A7FF07A92BA} = {2725BD39-95C4-4848-B444-655D24C87A64}
+	EndGlobalSection
+EndGlobal

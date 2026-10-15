@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Not a WPF app, but the project under test is, and System.IO.Packaging
+         only comes with the Windows Desktop SDK. Without this the test project
+         fails to compile with CS1069 on every use of Package. -->
+    <UseWPF>true</UseWPF>
+    <AssemblyName>OfficeMetadataEditor.Tests</AssemblyName>
+    <RootNamespace>OfficeMetadataEditor.Tests</RootNamespace>
+    <!-- No test framework on purpose: this project had none, and a hand-rolled
+         harness keeps `dotnet run` the whole story. See Harness.cs. -->
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\OfficeMetadataEditor\OfficeMetadataEditor.csproj" />
+  </ItemGroup>
+
+</Project>

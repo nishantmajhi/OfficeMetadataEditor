@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <AssemblyName>OfficeMetadataEditor</AssemblyName>
+    <RootNamespace>OfficeMetadataEditor</RootNamespace>
+    <Company>—</Company>
+    <Product>Office Metadata Editor</Product>
+    <Version>1.0.0</Version>
+    <!-- Package.Open needs Windows file APIs and PresentationFramework, both Windows-only -->
+    <UseWindowsForms>false</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Embedded as a WPF resource so MainWindow.xaml can reference it via a
+         pack URI (drives the title bar / Alt-Tab / taskbar icon at runtime),
+         on top of ApplicationIcon above which sets the .exe's own icon. -->
+    <Resource Include="Assets\app.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Fluent/Windows 11 style controls, Mica/Acrylic backdrop, automatic light/dark
+         theme switching via SystemThemeWatcher. Actively maintained, MIT licensed. -->
+    <PackageReference Include="WPF-UI" Version="4.0.2" />
+
+    <!-- Microsoft's own MVVM source-generator toolkit: [ObservableProperty],
+         [RelayCommand], no hand-written INotifyPropertyChanged boilerplate. -->
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+  </ItemGroup>
+
+</Project>
